@@ -1,0 +1,94 @@
+EXAMPLE_TEMPLATE:
+    id: MyCustomTemplate
+    name: My custom template (example)
+    description: This is an example of a basic template and options
+    wrapper: '<section class="main-template-example">{{content}}</div>'
+    positions:
+        -
+            id: HeadingPosition
+            name: Heading of example content
+            description: This is an example of a basic heading and options
+            wrapper: '<div class="heading-position">{{content}}</div>'
+            positions:
+                -
+                    id: ExampleContentHeadingBlock
+                    name: Example content for heading
+                    description: This is an example content
+                    wrapper: '<div class="content-heading-position">{{content}}</div>'
+                    content: 'heading content 1'
+                -
+                    id: ExampleContentHeadingBlock
+                    name: Example content for heading
+                    description: This is an example content
+                    wrapper: '<div class="content-heading-position">{{content}}</div>'
+                    content: 'heading content 2'
+                -
+                    id: ExampleContentHeadingBlock
+                    name: Example content for heading
+                    description: This is an example content
+                    wrapper: '<div class="content-heading-position">{{content}}</div>'
+                    content: 'heading content 3'
+        -
+            id: SlidePosition
+            class: AutomatedSlide
+            type: custom
+            name: Example of automated slide content
+            description: This is an example of a basic slide (or custom type)
+            wrapper: '<div class="container"><div class="row"><div class="col-12">{{content}}</div></div></div>'
+            data:
+                item_type: SLIDE
+                item_code: 5
+                js_content: 'alert("Hello World");'
+                css_content: 'body { background-color: red; }'
+        -
+            id: MainContentPosition
+            name: Heading of example content
+            description: This is an example of a basic heading and options
+            wrapper: '<div class="container"><div class="row">{{content}}</div></div>'
+            positions:
+                -
+                    id: MainContentBlock
+                    name: Example content
+                    description: This is an example content
+                    wrapper: '<section class="col-8"><div class="row">{{content}}</div></section>'
+                    positions:
+                        -
+                            id: MainContentBlockHeading1
+                            name: Example main heading
+                            description: This is an example content
+                            wrapper: '<div class="col-4">{{content}}</div>'
+                            content: 'bloc 1'
+                        -
+                            id: MainContentBlockHeading2
+                            name: Example main heading
+                            description: This is an example content
+                            wrapper: '<div class="col-4">{{content}}</div>'
+                            content: 'bloc 2'
+                        -
+                            id: MainContentBlockHeading3
+                            name: Example main heading
+                            description: This is an example content
+                            wrapper: '<div class="col-4">{{content}}</div>'
+                            content: 'bloc 3'
+                        -
+                            id: MainContentBlockText
+                            name: Example main text
+                            description: This is an example content text
+                            wrapper: '<div class="col-12">{{content}}</div>'
+                            content: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget dolor vitae odio sollicitudin ornare. Ut dictum sem sed leo suscipit mattis. Duis non aliquam massa. Aliquam erat volutpat. Praesent suscipit mi et felis pellentesque, in dignissim turpis malesuada. Aliquam quis libero eget dolor blandit viverra. Maecenas feugiat mi at libero dapibus, non varius ante viverra.</p><p>Duis mattis justo at sapien consectetur, ac luctus tortor aliquam. Etiam tempor tellus eu purus efficitur tristique. Suspendisse lectus sapien, placerat et feugiat et, scelerisque ac est. Sed consectetur risus mollis dolor scelerisque varius. Cras purus dui, mattis ac consectetur sed, ultricies egestas lectus. Sed vulputate interdum hendrerit. Morbi nibh tellus, faucibus id auctor ut, imperdiet nec nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam efficitur dui et lobortis porttitor. Cras sagittis posuere nunc nec suscipit. Suspendisse molestie sollicitudin eros, non pellentesque lorem tempor vitae. Nunc quis lectus elementum, sollicitudin augue ac, ornare quam. In eu dolor maximus, rutrum justo a, porttitor dolor.</p><p>Aenean nisl dolor, scelerisque eu risus ut, dapibus pulvinar orci. In felis eros, porttitor ut cursus sed, feugiat quis nisi. Maecenas ullamcorper urna nec auctor dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse ante sem, pharetra vel blandit in, viverra at neque. Phasellus aliquam maximus sagittis. Pellentesque id maximus arcu. Mauris rutrum mattis dui, ut condimentum tellus rutrum porttitor. Mauris feugiat id orci vitae egestas. Pellentesque vitae laoreet nisi. Donec volutpat ipsum faucibus, placerat dolor et, hendrerit odio. Praesent felis eros, consequat non turpis id, mattis ullamcorper est. Etiam in lectus commodo nisi venenatis vulputate ac sit amet est.</p><p>Praesent id lacus vitae dui tincidunt accumsan. Curabitur eget egestas massa. Ut pulvinar nisi id ligula sodales, vel tincidunt augue lacinia. Suspendisse condimentum, felis eget euismod lobortis, metus nunc scelerisque enim, sit amet imperdiet libero magna ut leo. Nullam vitae urna ex. Nam cursus quam in accumsan volutpat. Vestibulum suscipit ullamcorper arcu, id elementum enim aliquam vel. Morbi id vestibulum ipsum. Aenean velit mi, lacinia et cursus at, lacinia sit amet arcu. Ut fringilla diam vitae erat vestibulum consectetur. Vivamus justo sem, consequat non erat sed, eleifend consectetur est. Morbi id nunc in mauris lobortis tristique.</p><p>Praesent non libero sit amet sapien interdum luctus ut ut ipsum. Integer consequat maximus volutpat. Quisque consectetur vulputate sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ultrices euismod elit, eu lobortis dui gravida ut. Pellentesque vestibulum ante aliquam, venenatis velit ut, consequat est. Fusce justo ex, gravida a fermentum viverra, vulputate eu lacus. Praesent ac arcu a ipsum tincidunt auctor. Sed ultrices lacus ut arcu dignissim, non elementum purus tristique. Duis molestie, turpis a accumsan auctor, mauris est elementum lorem, nec pulvinar massa augue a leo. Pellentesque fringilla, lectus et tincidunt placerat, augue augue ultrices quam, ac mattis urna nibh in nunc. Donec tincidunt tortor ac lacus vehicula egestas. Mauris sollicitudin neque ac nisl tempor, non dictum nunc dignissim. Aenean ut elementum nunc. Donec commodo at neque eu feugiat. Praesent dictum erat odio, ac pulvinar ex vulputate a.</p>"
+                -
+                    id: MainContentSidebar
+                    name: Example sidebar content
+                    description: This is an example content
+                    wrapper: '<aside class="col-4">{{content}}</aside>'
+                    content: 'Sidebar content here'
+        -   id: FooterPosition
+            name: Example footer
+            description: This is an example of a basic footer and options
+            wrapper: '<div class="container"><div class="row"><div class="col-12">{{content}}</div></div></div>'
+            positions:
+                -   id: ExampleContentFooterBlock
+                    name: Example footer
+                    description: This is an example footer
+                    wrapper: '<div class="content-footer-position">{{content}}</div>'
+                    content: 'Footer content here'
