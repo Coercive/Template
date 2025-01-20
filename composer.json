@@ -22,7 +22,7 @@
     },
     "require-dev": {},
     "autoload": {
-        "psr-4": { "Coercive\\Utility\\Template\\": "lib/" }
+        "psr-4": { "Coercive\\Utility\\Template\\": "dist/" }
     },
     "minimum-stability" : "dev"
 }
